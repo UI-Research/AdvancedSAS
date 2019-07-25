@@ -8,9 +8,6 @@ run;
 proc print data=sas.hdrs;
 	title "Claim Headers";
 run;
-proc print data=sas.lns;
-	title "Claim Lines";
-run;
 
 /*
 Automatic Macro Variables

@@ -1,0 +1,128 @@
+---
+output:
+  revealjs::revealjs_presentation:
+    transition: fade
+    css: www/revealjs.css
+    incremental: TRUE
+    reveal_options:
+      slideNumber: TRUE
+      previewLinks: TRUE
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, echo = FALSE}
+library(knitr)
+library(SASmarkdown)
+opts_chunk$set(message = FALSE)
+opts_chunk$set(warning = FALSE)
+opts_chunk$set(fig.align = "center")
+
+```
+# <font color="#ffffff">Intro to SAS Macros</font> {data-background=#1696d2}
+```{r, echo=FALSE, out.width = "50%"}
+knitr::include_graphics("www/images/urban_grid_elevate_white_blue.png")
+```
+
+<font color="#ffffff">
+
+Leah Durbak
+
+>* Senior Research Programmer 
+>* In Office of Tech & Data Science
+>* Work mostly on administrative healthcare claims housed by the CMS
+>* Spend the vast majority of my time working with SAS
+>* Contact: ldurbak@urban.org or Slack (join our channel! sas-users-group)
+
+</font>
+
+## Overview
+1) Explain why you might to use SAS macros and how they work
+2) Walk through examples of using macro in SAS code
+3) List tips/tricks/common stumbling blocks for using SAS macros
+4) List resources where you can learn more
+
+# <font color="#ffffff">Why use macros?</font> {data-background=#1696d2}
+
+## Efficiency 
+>- If you ever copy and paste your code to run it again with minor changes
+>- If you know your code will need variable or value changes in the future
+>- If you produce dated reports
+
+Macros will help reduce code development and maintenance time!
+
+## How to use SAS macros to increase your code efficiency 
+> - Develop working code without macro coding 
+> - "Macrotize" your code:
+>   - Replace hardcoded values with macro (where possible)
+>   - Add conditional/iterative processing with macros (where possible)   
+>- Macros will enable you to make relatively small changes to use your code over a wide variety of scenarios
+  
+# <font color="#ffffff">What is the SAS Macro Facility?</font> {data-background=#1696d2}
+
+## Macros are a text processing facility
+>* When you submit code in SAS, it goes to a memory location called the input stack.
+>* In the input stack, the **word scanner** reads the text from left to right
+>* The word scanner recognizes two macro triggers that begin with two token sequences:
+
+<font size="5">
+
+    &name-token: a macro variable
+    
+    %name-token: a macro statement, function, or call
+    
+</font size>
+
+
+## Text processing facility
+
+<font size="6">
+
+>* When the word scanner encounters one of the two macro triggers, it sends the macro to the macro processor.
+>* The macro processor resolves the macro and passes it back to the compiler, where the rest of the code processing happens.
+
+</font size>
+
+```{r, echo=FALSE, out.width = "100%"}
+knitr::include_graphics("www/images/programflow.png")
+``` 
+
+## End of slides (for now)
+
+The rest of this session will follow the SAS program included with today's materials on Git. 
+
+<font size="6">
+
+>- Start SAS
+>   - SAS Studio  - sasstudio.urban.org 
+>- Get session materials from Git
+https://github.com/UI-Research/AdvancedSAS 
+>   - Click on “intro_to_macros_20190723.sas”
+>     - Click on “raw” button in top right of code block
+>     - Copy and paste the SAS code into your SAS environment
+>   - Download the SAS datasets (demo, hdrs, lns)
+>   - Other materials:
+>     - These slides
+</font size>
+
+
+# <font color="#ffffff">Resources</font> {data-background=#1696d2}
+
+## SAS Sessions
+>- Combining SAS Macros and PROC SQL 
+>   - Even more automation of dynamic code! 
+>   - Tuesday, August 6th, 12-1pm
+>   - Same room (Learning and Community Hub, 3030)
+>   - Email ldurbak@urban.org if you don’t have an invite
+>- Other sessions TBA!
+
+## SAS Users Group Resources
+>- SAS Users Group website: https://uint.urban.org/sasusers/index.html  (or search “SAS users group” on the intranet)
+>   - Getting started 
+>   - Bootcamp
+>   - Brownbags
+>     - Including this one!
+>   - UI Guide to SAS 
+>   - Links to SAS Institute Training
+>   - Git Hub 
+

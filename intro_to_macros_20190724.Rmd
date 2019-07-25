@@ -100,7 +100,7 @@ https://github.com/UI-Research/AdvancedSAS
 >   - Click on “intro_to_macros_20190723.sas”
 >     - Click on “raw” button in top right of code block
 >     - Copy and paste the SAS code into your SAS environment
->   - Download the SAS datasets (demo, hdrs, lns)
+>   - Download the SAS datasets demo and hdrs
 >   - Other materials:
 >     - These slides
 </font size>

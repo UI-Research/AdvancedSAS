@@ -299,6 +299,37 @@ See your log for how this loop is working.
 proc print data=sas.summary_lns_unitedhealthcare_6;
 	title "Summary Spending by TOS for UnitedHealthcare Claims with Claim Type = 6";
 run;
+
+/*Another option without macros or loops:
+If you your system resources can handle combining all the data at once, 
+you can create a "unique key" variable with catx() to avoid the loops.
+Note that this doesn't create separate tables for each provider/claim type combination.
+*/
+proc sql;
+	create table demo_hdr_lns as 
+	select hdr.*, 
+		dm.InsuranceProvider,
+		lns.TOS,
+		lns.PaidAmount,
+		catx("_",InsuranceProvider, ClaimType) as provider_clmtype
+	from sas.hdrs as hdr left join sas.demo as dm 
+	on hdr.ID =  dm.ID
+	left join sas.lns as lns
+	on lns.ClaimHeaderLink = hdr.ClaimHeaderLink;
+
+	select substr(provider_clmtype,1,length(provider_clmtype)-2) as InsuranceProvider,
+		substr(provider_clmtype, length(provider_clmtype)) as ClaimType,
+		TOS, 
+		count(PaidAmount) as N_claim_lns,
+		mean(PaidAmount) as mean_PaidAmount, 
+		min(PaidAmount) as min_PaidAmount, 
+		max(PaidAmount) as max_PaidAmount
+	from demo_hdr_lns
+	group by provider_clmtype, TOS
+	order by provider_clmtype, TOS;
+quit;
+
+
 /*
 Tips for Troublshooting Macros in Your Code
 */

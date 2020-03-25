@@ -1,0 +1,18 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+      
+
+84         proc freq data=sashelp.cars;
+85         	table Cylinders;
+86         run;
+
+NOTE: There were 428 observations read from the data set SASHELP.CARS.
+NOTE: The PROCEDURE FREQ printed page 1.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.29 seconds
+      cpu time            0.03 seconds
+      
+
+87         proc printto;run;
+

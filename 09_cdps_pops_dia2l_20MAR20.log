@@ -1,0 +1,1996 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Libref DATA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\raw_data\SAS_DATASETS
+NOTE: Libref DATA_OT refers to the same physical library as STATEOT.
+NOTE: Libref DATA_OT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\raw_data\SAS_DATASETS\OT
+NOTE: Libref SPACE refers to the same physical library as LIBRARY.
+NOTE: Libref SPACE was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\workspace
+NOTE: Libref AREA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\NO_PII
+NOTE: Libref OUT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\workspace\output
+NOTE: Libref LIBRARY refers to the same physical library as SPACE.
+NOTE: Libref LIBRARY was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\workspace
+NOTE: Libref CPDS_WT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\NO_PII\CDPS_WEIGHTS
+NOTE: Libref SCORES was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\workspace\CDPS_SCORES
+NOTE: Libref AHRF_HRR was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: \\sas1_alt\MCD-SPVR\data\NO_PII\HRR\workspace
+NOTE: Libref SPD_ADJ was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: \\sas1_alt\MCD-SPVR\Analysis_PartII\CMS64_ADJ
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 1683 observations read from the data set SPD_ADJ.FINAL_FACTORS_V01272020.
+NOTE: The data set WORK.FORMAT_SPD_ADJ has 1683 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 1683 observations read from the data set WORK.FORMAT_SPD_ADJ.
+NOTE: The data set WORK.SPD_ADJ has 51 observations and 35 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.TEMP created, with 58978490 rows and 637 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:10:39.07
+      cpu time            50:03.98
+      
+
+
+NOTE: Missing values were generated as a result of performing an operation on missing 
+      values.
+      Each place is given by: (Number of times) at (Line):(Column).
+      1238548290 at 4536:25   
+NOTE: There were 58978490 observations read from the data set WORK.TEMP.
+NOTE: The data set WORK.RECODE_ARRAY has 58978490 observations and 628 variables.
+NOTE: DATA statement used (Total process time):
+      real time           16:04.16
+      cpu time            15:56.48
+      
+
+NOTE: Table WORK.RECODE_ARRAY_DIST created, with 58978490 rows and 628 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           2:01:50.25
+      cpu time            1:25:43.15
+      
+
+NOTE: Table WORK.AHRF_MSA_XWALK created, with 3143 rows and 26 columns.
+
+NOTE: Table WORK.TEMP_AHRF_AGGRE created, with 485 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.44 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.LIMITED_CDPSPOP created, with 357376 rows and 628 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           5:41.32
+      cpu time            5:40.17
+      
+
+NOTE: Libref DATA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\raw_data\SAS_DATASETS
+NOTE: Libref SPACE refers to the same physical library as LIBRARY.
+NOTE: Libref SPACE was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\workspace
+NOTE: Libref STATEOT refers to the same physical library as DATA_OT.
+NOTE: Libref STATEOT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\raw_data\SAS_DATASETS\OT
+NOTE: Libref SPD_ADJ was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: \\sas1_alt\MCD-SPVR\Analysis_PartII\CMS64_ADJ
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.IP_CDPSCLAIMS created, with 7144 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           38.71 seconds
+      cpu time            26.95 seconds
+      
+
+NOTE: Table WORK.IP_ADJSPD created, with 7144 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.19 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.LIMITED_CDPSPOP_DXCLMS_IP created, with 6135 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.LT_CDPSCLAIMS created, with 40670 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:20.48
+      cpu time            47.17 seconds
+      
+
+NOTE: Table WORK.LT_ADJSPD created, with 40670 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.LIMITED_CDPSPOP_DXCLMS_LT created, with 2520 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.11 seconds
+      cpu time            0.07 seconds
+      
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.32 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Libref DATA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\raw_data\SAS_DATASETS
+NOTE: Libref SPACE refers to the same physical library as LIBRARY.
+NOTE: Libref SPACE was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\workspace
+NOTE: Libref STATEOT refers to the same physical library as DATA_OT.
+NOTE: Libref STATEOT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: P:\MCD-SPVR\data\raw_data\SAS_DATASETS\OT
+NOTE: Libref SPD_ADJ was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: \\sas1_alt\MCD-SPVR\Analysis_PartII\CMS64_ADJ
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 35697 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           58.10 seconds
+      cpu time            40.91 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 35697 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.14 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_AL created, with 11950 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 2189 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           17.98 seconds
+      cpu time            11.96 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 2189 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_AK created, with 959 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 22105 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           2:41.06
+      cpu time            1:53.78
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 22105 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.14 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_AZ created, with 2499 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 12549 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:24.44
+      cpu time            57.59 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 12549 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.13 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_AR created, with 4759 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 7790 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:00.40
+      cpu time            42.60 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 7790 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_CO created, with 2877 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 38906 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:10.96
+      cpu time            50.37 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 38906 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_CT created, with 14366 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.07 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 296 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           32.67 seconds
+      cpu time            17.00 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 296 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_DE created, with 114 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 5702 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           37.55 seconds
+      cpu time            18.86 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 5702 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_DC created, with 2134 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 35912 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           6:40.04
+      cpu time            3:13.78
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 35912 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_FL created, with 12625 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 32270 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           3:57.80
+      cpu time            1:35.44
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 32270 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.11 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_GA created, with 11694 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 5 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           29.52 seconds
+      cpu time            16.95 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 5 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_HI created, with 5 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 4857 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           59.19 seconds
+      cpu time            26.41 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 4857 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_ID created, with 1803 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 76972 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           5:19.00
+      cpu time            2:37.66
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 76972 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.23 seconds
+      cpu time            0.11 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_IL created, with 28876 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.63 seconds
+      cpu time            0.09 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 18963 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           2:31.37
+      cpu time            1:20.49
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 18963 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_IN created, with 6710 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 10447 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:52.33
+      cpu time            52.55 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 10447 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_IA created, with 3774 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 3752 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:16.70
+      cpu time            35.78 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 3752 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_KS created, with 1385 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.74 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 8304 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           2:31.27
+      cpu time            1:15.31
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 8304 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_KY created, with 1201 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 11384 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           2:15.36
+      cpu time            1:25.52
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 11384 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_LA created, with 4586 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 11940 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           40.37 seconds
+      cpu time            27.00 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 11940 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_ME created, with 4623 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 2531 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:52.09
+      cpu time            1:08.95
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 2531 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_MD created, with 870 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 22776 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           2:57.33
+      cpu time            1:53.11
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 22776 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_MA created, with 7403 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.63 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 6228 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           4:03.12
+      cpu time            2:27.21
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 6228 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_MI created, with 2383 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.57 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 8298 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           3:03.62
+      cpu time            1:45.47
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 8298 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_MN created, with 2996 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 4839 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           50.67 seconds
+      cpu time            32.33 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 4839 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_MS created, with 1584 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.17 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 32335 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           2:08.86
+      cpu time            1:15.16
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 32335 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.07 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_MO created, with 11656 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 1310 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           16.52 seconds
+      cpu time            10.95 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 1310 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_MT created, with 558 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 1054 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           24.90 seconds
+      cpu time            15.64 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 1054 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_NE created, with 410 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 4654 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           22.85 seconds
+      cpu time            15.08 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 4654 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_NV created, with 1649 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 4030 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           18.86 seconds
+      cpu time            12.63 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 4030 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_NH created, with 1210 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 6390 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           2:47.70
+      cpu time            1:39.17
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 6390 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_NJ created, with 2428 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 2249 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           59.33 seconds
+      cpu time            38.68 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 2249 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_NM created, with 894 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 66932 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           5:00.84
+      cpu time            2:52.55
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 66932 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.09 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_NC created, with 20948 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.87 seconds
+      cpu time            0.09 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 1766 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           10.66 seconds
+      cpu time            6.30 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 1766 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_ND created, with 586 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 17357 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           5:43.55
+      cpu time            3:16.73
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 17357 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_OH created, with 5942 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.23 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 20221 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:38.85
+      cpu time            1:02.08
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 20221 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_OK created, with 7520 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.64 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 1423 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:18.97
+      cpu time            45.95 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 1423 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_OR created, with 466 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 11273 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           3:00.16
+      cpu time            1:47.71
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 11273 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_PA created, with 4570 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 74 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           21.12 seconds
+      cpu time            12.83 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 74 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_RI created, with 34 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 10013 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:36.17
+      cpu time            1:00.37
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 10013 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_SC created, with 3674 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.24 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 4872 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           11.40 seconds
+      cpu time            7.66 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 4872 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_SD created, with 1197 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 2 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           2:04.80
+      cpu time            1:11.55
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 2 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.11 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_TN created, with 2 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 4034 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           33.15 seconds
+      cpu time            21.49 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 4034 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_UT created, with 1542 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 5995 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           15.90 seconds
+      cpu time            12.16 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 5995 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_VT created, with 2384 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 2331 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:26.65
+      cpu time            47.36 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 2331 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_VA created, with 1024 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 7739 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:37.30
+      cpu time            58.32 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 7739 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_WA created, with 2431 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 20764 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           30.73 seconds
+      cpu time            20.49 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 20764 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_WV created, with 7896 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 10122 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1:54.49
+      cpu time            1:07.76
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 10122 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.07 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_WI created, with 4210 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 1657 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           8.91 seconds
+      cpu time            7.09 seconds
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 1657 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_WY created, with 557 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 37089 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           6:00.37
+      cpu time            3:53.00
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 37089 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_CA1 created, with 11808 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.07 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 7829 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           5:51.27
+      cpu time            3:50.77
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 7829 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_CA2 created, with 2776 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 10106 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           4:52.29
+      cpu time            2:58.30
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 10106 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.11 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_NY1 created, with 4068 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 11880 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           5:28.67
+      cpu time            2:56.81
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 11880 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_NY2 created, with 4104 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 5501 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           3:57.14
+      cpu time            2:15.17
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 5501 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_TX1 created, with 2223 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: Table WORK.OT_CDPSCLAIMS created, with 4388 rows and 10 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           4:01.67
+      cpu time            2:19.68
+      
+
+NOTE: Table WORK.OT_ADJSPD created, with 4388 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.OTCLAIMS_TX2 created, with 1883 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.03 seconds
+      
+
+
+NOTE: There were 959 observations read from the data set WORK.OTCLAIMS_AK.
+NOTE: There were 11950 observations read from the data set WORK.OTCLAIMS_AL.
+NOTE: There were 4759 observations read from the data set WORK.OTCLAIMS_AR.
+NOTE: There were 2499 observations read from the data set WORK.OTCLAIMS_AZ.
+NOTE: There were 11808 observations read from the data set WORK.OTCLAIMS_CA1.
+NOTE: There were 2776 observations read from the data set WORK.OTCLAIMS_CA2.
+NOTE: There were 2877 observations read from the data set WORK.OTCLAIMS_CO.
+NOTE: There were 14366 observations read from the data set WORK.OTCLAIMS_CT.
+NOTE: There were 2134 observations read from the data set WORK.OTCLAIMS_DC.
+NOTE: There were 114 observations read from the data set WORK.OTCLAIMS_DE.
+NOTE: There were 12625 observations read from the data set WORK.OTCLAIMS_FL.
+NOTE: There were 11694 observations read from the data set WORK.OTCLAIMS_GA.
+NOTE: There were 5 observations read from the data set WORK.OTCLAIMS_HI.
+NOTE: There were 3774 observations read from the data set WORK.OTCLAIMS_IA.
+NOTE: There were 1803 observations read from the data set WORK.OTCLAIMS_ID.
+NOTE: There were 28876 observations read from the data set WORK.OTCLAIMS_IL.
+NOTE: There were 6710 observations read from the data set WORK.OTCLAIMS_IN.
+NOTE: There were 1385 observations read from the data set WORK.OTCLAIMS_KS.
+NOTE: There were 1201 observations read from the data set WORK.OTCLAIMS_KY.
+NOTE: There were 4586 observations read from the data set WORK.OTCLAIMS_LA.
+NOTE: There were 7403 observations read from the data set WORK.OTCLAIMS_MA.
+NOTE: There were 870 observations read from the data set WORK.OTCLAIMS_MD.
+NOTE: There were 4623 observations read from the data set WORK.OTCLAIMS_ME.
+NOTE: There were 2383 observations read from the data set WORK.OTCLAIMS_MI.
+NOTE: There were 2996 observations read from the data set WORK.OTCLAIMS_MN.
+NOTE: There were 11656 observations read from the data set WORK.OTCLAIMS_MO.
+NOTE: There were 1584 observations read from the data set WORK.OTCLAIMS_MS.
+NOTE: There were 558 observations read from the data set WORK.OTCLAIMS_MT.
+NOTE: There were 20948 observations read from the data set WORK.OTCLAIMS_NC.
+NOTE: There were 586 observations read from the data set WORK.OTCLAIMS_ND.
+NOTE: There were 410 observations read from the data set WORK.OTCLAIMS_NE.
+NOTE: There were 1210 observations read from the data set WORK.OTCLAIMS_NH.
+NOTE: There were 2428 observations read from the data set WORK.OTCLAIMS_NJ.
+NOTE: There were 894 observations read from the data set WORK.OTCLAIMS_NM.
+NOTE: There were 1649 observations read from the data set WORK.OTCLAIMS_NV.
+NOTE: There were 4068 observations read from the data set WORK.OTCLAIMS_NY1.
+NOTE: There were 4104 observations read from the data set WORK.OTCLAIMS_NY2.
+NOTE: There were 5942 observations read from the data set WORK.OTCLAIMS_OH.
+NOTE: There were 7520 observations read from the data set WORK.OTCLAIMS_OK.
+NOTE: There were 466 observations read from the data set WORK.OTCLAIMS_OR.
+NOTE: There were 4570 observations read from the data set WORK.OTCLAIMS_PA.
+NOTE: There were 34 observations read from the data set WORK.OTCLAIMS_RI.
+NOTE: There were 3674 observations read from the data set WORK.OTCLAIMS_SC.
+NOTE: There were 1197 observations read from the data set WORK.OTCLAIMS_SD.
+NOTE: There were 2 observations read from the data set WORK.OTCLAIMS_TN.
+NOTE: There were 2223 observations read from the data set WORK.OTCLAIMS_TX1.
+NOTE: There were 1883 observations read from the data set WORK.OTCLAIMS_TX2.
+NOTE: There were 1542 observations read from the data set WORK.OTCLAIMS_UT.
+NOTE: There were 1024 observations read from the data set WORK.OTCLAIMS_VA.
+NOTE: There were 2384 observations read from the data set WORK.OTCLAIMS_VT.
+NOTE: There were 2431 observations read from the data set WORK.OTCLAIMS_WA.
+NOTE: There were 4210 observations read from the data set WORK.OTCLAIMS_WI.
+NOTE: There were 7896 observations read from the data set WORK.OTCLAIMS_WV.
+NOTE: There were 557 observations read from the data set WORK.OTCLAIMS_WY.
+NOTE: The data set WORK.ALL_LIMITED_CDPSPOP_DXCLMS_OT has 242826 observations and 8 
+      variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.11 seconds
+      
+
+NOTE: Table WORK.LIMITED_CDPSPOP_DXCLMS_OT created, with 242826 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.29 seconds
+      cpu time            0.37 seconds
+      
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.07 seconds
+      
+
+
+NOTE: There were 6135 observations read from the data set WORK.LIMITED_CDPSPOP_DXCLMS_IP.
+NOTE: There were 2520 observations read from the data set WORK.LIMITED_CDPSPOP_DXCLMS_LT.
+NOTE: There were 242826 observations read from the data set 
+      WORK.LIMITED_CDPSPOP_DXCLMS_OT.
+NOTE: The data set WORK.DATA_FOR_RESHAPE has 251481 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.13 seconds
+      cpu time            0.06 seconds
+      
+
+NOTE: Table WORK.RESHAPE_ALL created, with 211023 rows and 23 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.50 seconds
+      cpu time            0.56 seconds
+      
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.21 seconds
+      cpu time            0.20 seconds
+      
+
+WARNING: Variable BENE_ID already exists on file WORK.ALL_POP.
+WARNING: Variable STATE_CD already exists on file WORK.ALL_POP.
+NOTE: Table WORK.ALL_POP created, with 357376 rows and 649 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           30.92 seconds
+      cpu time            38.79 seconds
+      
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.POP_FOR_STATS created, with 357873 rows and 660 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           10:56.30
+      cpu time            7:57.61
+      
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           18.67 seconds
+      cpu time            26.20 seconds
+      
+
+
+NOTE: There were 357873 observations read from the data set WORK.POP_FOR_STATS.
+NOTE: The data set WORK.POP_FOR_STATS_NMISSFILL has 357873 observations and 660 variables.
+NOTE: DATA statement used (Total process time):
+      real time           9.33 seconds
+      cpu time            9.31 seconds
+      
+
+NOTE: Table WORK.SPENDAVG created, with 485 rows and 6 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           3.71 seconds
+      cpu time            3.77 seconds
+      
+
+NOTE: Table WORK.POP_FOR_STATS_RES created, with 357873 rows and 665 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           14.77 seconds
+      cpu time            16.28 seconds
+      
+
+NOTE: Table WORK.POP_FOR_STATS_MSAS_SPDTC created, with 357873 rows and 679 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           6.58 seconds
+      cpu time            6.48 seconds
+      
+
+
+NOTE: The data set WORK.PCTLS_ST_MSA has 485 observations and 267 variables.
+NOTE: PROCEDURE UNIVARIATE used (Total process time):
+      real time           9.70 seconds
+      cpu time            9.65 seconds
+      
+
+
+NOTE: The data set WORK.STATS_ST_MSA has 485 observations and 153 variables.
+NOTE: PROCEDURE UNIVARIATE used (Total process time):
+      real time           9.63 seconds
+      cpu time            9.56 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+WARNING: Variable cell_n already exists on file WORK.POP_FOR_STATS_MSALEVEL.
+NOTE: Table WORK.POP_FOR_STATS_MSALEVEL created, with 485 rows and 62 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           4.28 seconds
+      cpu time            4.86 seconds
+      
+
+
+NOTE: There were 485 observations read from the data set WORK.POP_FOR_STATS_MSALEVEL.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.25 seconds
+      cpu time            0.17 seconds
+      
+
+NOTE: Table WORK.UNIQUE_MSAS created, with 485 rows and 1 columns.
+
+NOTE: Table WORK.ST_MSA_COLLAPSED created, with 485 rows and 485 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.71 seconds
+      cpu time            0.15 seconds
+      
+
+NOTE: Table WORK.WAGEINDEX_2012 created, with 467 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.77 seconds
+      cpu time            0.00 seconds
+      
+
+
+5361    /**********************************************************************
+5362    *   PRODUCT:   SAS
+5363    *   VERSION:   9.4
+5364    *   CREATOR:   External File Interface
+5365    *   DATE:      20MAR20
+5366    *   DESC:      Generated SAS Datastep Code
+5367    *   TEMPLATE SOURCE:  (None Specified.)
+5368    ***********************************************************************/
+5369       data WORK.MSA_XWALK    ;
+5370       %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+5371       infile 'P:\MCD-SPVR\data\raw_data\wageindmsa_v_clmsmsa_impu.csv' delimiter =
+5371 ! ',' MISSOVER DSD lrecl=32767 firstobs=2 ;
+5372          informat wageind_st_msa $8. ;
+5373          informat clms_st_msa $8. ;
+5374          format wageind_st_msa $8. ;
+5375          format clms_st_msa $8. ;
+5376       input
+5377                   wageind_st_msa  $
+5378                   clms_st_msa  $
+5379       ;
+5380       if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro
+5380 ! variable */
+5381       run;
+
+NOTE: The infile 'P:\MCD-SPVR\data\raw_data\wageindmsa_v_clmsmsa_impu.csv' is:
+      Filename=P:\MCD-SPVR\data\raw_data\wageindmsa_v_clmsmsa_impu.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=9227,
+      Last Modified=11Oct2019:12:46:25,
+      Create Time=11Oct2019:12:28:09
+
+NOTE: 485 records were read from the infile 
+      'P:\MCD-SPVR\data\raw_data\wageindmsa_v_clmsmsa_impu.csv'.
+      The minimum record length was 9.
+      The maximum record length was 17.
+NOTE: The data set WORK.MSA_XWALK has 485 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+485 rows created in WORK.MSA_XWALK from 
+P:\MCD-SPVR\data\raw_data\wageindmsa_v_clmsmsa_impu.csv.
+  
+  
+  
+NOTE: WORK.MSA_XWALK data set was successfully created.
+NOTE: The data set WORK.MSA_XWALK has 485 observations and 2 variables.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           1.17 seconds
+      cpu time            0.07 seconds
+      
+
+WARNING: Variable MSA_NO_ already exists on file WORK.WAGEINDEX_2012_IMPU.
+WARNING: Variable MSA_NAME already exists on file WORK.WAGEINDEX_2012_IMPU.
+WARNING: Variable STATE already exists on file WORK.WAGEINDEX_2012_IMPU.
+NOTE: Table WORK.WAGEINDEX_2012_IMPU created, with 485 rows and 12 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.57 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.TEMP_DIA2L created, with 485 rows and 488 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.04 seconds
+      
+
+
+NOTE: There were 485 observations read from the data set WORK.TEMP_DIA2L.
+NOTE: The data set SPACE.TEMP_DIA2L has 485 observations and 488 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.23 seconds
+      cpu time            0.18 seconds
+      
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 485 observations read from the data set SPACE.TEMP_DIA2L.
+NOTE: PROCEDURE MEANS used (Total process time):
+      real time           0.69 seconds
+      cpu time            0.78 seconds
+      
+
+NOTE: Table OUT.CDPS_DIA2L20200320 created, with 485 rows and 487 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Writing ODS PDF output to DISK destination 
+      "P:\MCD-SPVR\reports\check_cdps_dia2l20200320.pdf", printer "PDF".
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN clauses 
+      will result in a missing value for the CASE expression.
+WARNING: A GROUP BY clause has been transformed into an ORDER BY clause because neither 
+         the SELECT clause nor the optional HAVING clause of the associated 
+         table-expression referenced a summary function.
+NOTE: Table WORK.AGE_COMPARE created, with 485 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.41 seconds
+      cpu time            0.03 seconds
+      
+
+
+NOTE: There were 485 observations read from the data set WORK.AGE_COMPARE.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.03 seconds
+      
+
+WARNING: A GROUP BY clause has been transformed into an ORDER BY clause because neither 
+         the SELECT clause nor the optional HAVING clause of the associated 
+         table-expression referenced a summary function.
+NOTE: Table WORK.MSA_COMPARE created, with 485 rows and 2 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.14 seconds
+      cpu time            0.03 seconds
+      
+
+
+NOTE: There were 485 observations read from the data set WORK.MSA_COMPARE.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.00 seconds
+      
+
+WARNING: A GROUP BY clause has been transformed into an ORDER BY clause because neither 
+         the SELECT clause nor the optional HAVING clause of the associated 
+         table-expression referenced a summary function.
+NOTE: Table WORK.BOE_COMPARE created, with 485 rows and 2 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.03 seconds
+      
+
+
+NOTE: There were 485 observations read from the data set WORK.BOE_COMPARE.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.SPD_COMPARE created, with 485 rows and 21 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.40 seconds
+      cpu time            0.03 seconds
+      
+
+
+ERROR: The setting of the SYSPRINT option to "OneNote (redirected 40)" will be ignored 
+ because "OneNote (redirected 40)" is not the name of a currently installed printer. 
+ This error may be due to changes in SYSPRINT option syntax. 
+ Please refer to your host companion for details of those changes.
+ERROR: The setting of the SYSPRINT option to "OneNote (redirected 40)" will be ignored 
+ because "OneNote (redirected 40)" is not the name of a currently installed printer. 
+ This error may be due to changes in SYSPRINT option syntax. 
+ Please refer to your host companion for details of those changes.
+ERROR: The setting of the SYSPRINT option to "OneNote (redirected 40)" will be ignored 
+ because "OneNote (redirected 40)" is not the name of a currently installed printer. 
+ This error may be due to changes in SYSPRINT option syntax. 
+ Please refer to your host companion for details of those changes.
+ERROR: The setting of the SYSPRINT option to "OneNote (redirected 40)" will be ignored 
+ because "OneNote (redirected 40)" is not the name of a currently installed printer. 
+ This error may be due to changes in SYSPRINT option syntax. 
+ Please refer to your host companion for details of those changes.
+NOTE: PROCEDURE SGPLOT used (Total process time):
+      real time           0.78 seconds
+      cpu time            0.28 seconds
+      
+NOTE: Listing image output written to C:\Users\LDURBAK\SGPlot46.png.
+NOTE: There were 485 observations read from the data set WORK.SPD_COMPARE.
+
+
+NOTE: PROCEDURE SGPLOT used (Total process time):
+      real time           0.41 seconds
+      cpu time            0.17 seconds
+      
+NOTE: Listing image output written to C:\Users\LDURBAK\SGPlot48.png.
+NOTE: There were 485 observations read from the data set WORK.SPD_COMPARE.
+
+
+NOTE: PROCEDURE SGPLOT used (Total process time):
+      real time           0.37 seconds
+      cpu time            0.14 seconds
+      
+NOTE: Listing image output written to C:\Users\LDURBAK\SGPlot50.png.
+NOTE: There were 485 observations read from the data set WORK.SPD_COMPARE.
+
+
+NOTE: PROCEDURE SGPLOT used (Total process time):
+      real time           0.36 seconds
+      cpu time            0.14 seconds
+      
+NOTE: Listing image output written to C:\Users\LDURBAK\SGPlot52.png.
+NOTE: There were 485 observations read from the data set WORK.SPD_COMPARE.
+
+
+NOTE: PROCEDURE SGPLOT used (Total process time):
+      real time           0.37 seconds
+      cpu time            0.20 seconds
+      
+NOTE: Listing image output written to C:\Users\LDURBAK\SGPlot54.png.
+NOTE: There were 485 observations read from the data set WORK.SPD_COMPARE.
+
+
+NOTE: PROCEDURE SGPLOT used (Total process time):
+      real time           0.36 seconds
+      cpu time            0.09 seconds
+      
+NOTE: Listing image output written to C:\Users\LDURBAK\SGPlot56.png.
+NOTE: There were 485 observations read from the data set WORK.SPD_COMPARE.
+
+
+NOTE: PROCEDURE SGPLOT used (Total process time):
+      real time           0.35 seconds
+      cpu time            0.15 seconds
+      
+NOTE: Listing image output written to C:\Users\LDURBAK\SGPlot58.png.
+NOTE: There were 485 observations read from the data set WORK.SPD_COMPARE.
+
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.44 seconds
+      cpu time            0.40 seconds
+      
+
+NOTE: ODS PDF printed 25 pages to P:\MCD-SPVR\reports\check_cdps_dia2l20200320.pdf.
+WARNING: Statement terminated early due to OUTOBS=10 option.
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.03 seconds
+      
+
+
+NOTE: There were 485 observations read from the data set WORK.SPD_COMPARE.
+NOTE: PROCEDURE FREQ used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.03 seconds
+      
+
+
